@@ -1,0 +1,724 @@
+/* Blue Gradient Theme Overrides */
+
+/* Main color variables */
+:root {
+  --blue-dark: #1a4b8c;
+  --blue-medium: #2d6ebd;
+  --blue-light: #4a90e2;
+  --blue-lighter: #7fb5f5;
+  --blue-lightest: #c5dcff;
+  --blue-gradient: linear-gradient(to right, var(--blue-dark), var(--blue-medium));
+  --blue-gradient-hover: linear-gradient(to right, var(--blue-medium), var(--blue-light));
+  --blue-gradient-vertical: linear-gradient(to bottom, var(--blue-dark), var(--blue-medium));
+  --secondary-color: #FFFFFF;
+  --tertiary-color: #d5d5d5;
+}
+
+/* Links */
+a {
+  color: var(--blue-medium);
+}
+
+a:hover, a:focus {
+  color: var(--blue-dark);
+}
+
+/* All Buttons - Apply blue gradient */
+.btn,
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+.sc_button,
+.comment-reply-link {
+  background: var(--blue-gradient);
+  border-color: var(--blue-medium);
+  color: var(--secondary-color);
+  transition: all 0.3s ease;
+}
+
+/* All Buttons - Hover effect */
+.btn:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+.sc_button:hover,
+.comment-reply-link:hover {
+  background: var(--blue-gradient-hover);
+  border-color: var(--blue-dark);
+  color: var(--secondary-color);
+  box-shadow: 0 5px 15px rgba(26, 75, 140, 0.25);
+}
+
+/* Button Default */
+.btn-default {
+  color: var(--secondary-color);
+  background: var(--blue-gradient);
+  border-color: var(--blue-medium);
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+  color: var(--secondary-color);
+  background: var(--blue-gradient-hover);
+  border-color: var(--blue-dark);
+}
+
+.btn-default.disabled,
+.btn-default[disabled],
+fieldset[disabled] .btn-default,
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled:active,
+.btn-default[disabled]:active,
+fieldset[disabled] .btn-default:active,
+.btn-default.disabled.active,
+.btn-default[disabled].active,
+fieldset[disabled] .btn-default.active {
+  background: var(--blue-medium);
+  border-color: var(--blue-medium);
+}
+
+.btn-default .badge {
+  color: var(--blue-medium);
+  background-color: var(--secondary-color);
+}
+
+/* Button Primary */
+.btn-primary {
+  color: var(--secondary-color);
+  background: var(--blue-gradient);
+  border-color: var(--blue-medium);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: var(--secondary-color);
+  background: var(--blue-gradient-hover);
+  border-color: var(--blue-dark);
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background: var(--blue-medium);
+  border-color: var(--blue-medium);
+}
+
+.btn-primary .badge {
+  color: var(--blue-medium);
+  background-color: var(--secondary-color);
+}
+
+/* Button styles for other button types */
+.btn-success,
+.btn-info,
+.btn-warning,
+.btn-danger {
+  background: var(--blue-gradient);
+  border-color: var(--blue-medium);
+}
+
+.btn-success:hover,
+.btn-info:hover,
+.btn-warning:hover,
+.btn-danger:hover,
+.btn-success:focus,
+.btn-info:focus,
+.btn-warning:focus,
+.btn-danger:focus,
+.btn-success:active,
+.btn-info:active,
+.btn-warning:active,
+.btn-danger:active {
+  background: var(--blue-gradient-hover);
+  border-color: var(--blue-dark);
+}
+
+/* Styled buttons */
+[class*="sc_button_style_"] {
+  background: var(--blue-gradient) !important;
+  border-color: var(--blue-medium) !important;
+  color: var(--secondary-color) !important;
+}
+
+[class*="sc_button_style_"]:hover {
+  background: var(--blue-gradient-hover) !important;
+  border-color: var(--blue-dark) !important;
+  color: var(--secondary-color) !important;
+  box-shadow: 0 5px 15px rgba(26, 75, 140, 0.25) !important;
+}
+
+/* Navigation hover effects */
+.menu_main_nav > li > a:hover,
+.menu_main_nav > li.sfHover > a,
+.menu_main_nav > li.current-menu-item > a,
+.menu_main_nav > li.current-menu-parent > a,
+.menu_main_nav > li.current-menu-ancestor > a {
+  color: var(--blue-light);
+}
+
+/* Dropdown menu hover effects */
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  background: var(--blue-gradient);
+  color: var(--secondary-color);
+}
+
+/* Form elements */
+input[type="submit"],
+input[type="button"],
+button,
+.sc_button {
+  background: var(--blue-gradient);
+  border-color: var(--blue-medium);
+  color: var(--secondary-color);
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.sc_button:hover {
+  background: var(--blue-gradient-hover);
+  border-color: var(--blue-dark);
+  color: var(--secondary-color);
+  box-shadow: 0 5px 15px rgba(26, 75, 140, 0.25);
+}
+
+/* Pagination */
+.pagination > li > a,
+.pagination > li > span,
+.pagination_wrap .pager li > a,
+.pagination_wrap .pager li > span {
+  color: var(--blue-medium);
+  border-color: var(--tertiary-color);
+}
+
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus,
+.pagination_wrap .pager li > a:hover,
+.pagination_wrap .pager li > span:hover {
+  background: var(--blue-gradient);
+  color: var(--secondary-color);
+  border-color: var(--blue-medium);
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  background: var(--blue-gradient);
+  border-color: var(--blue-medium);
+}
+
+/* Tabs */
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus,
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  border-color: var(--blue-medium);
+  background: var(--blue-gradient);
+  color: var(--secondary-color);
+}
+
+/* Progress bars */
+.progress-bar {
+  background: var(--blue-gradient);
+}
+
+/* Accordion and toggles */
+.panel-heading a:hover,
+.panel-heading a:focus,
+.panel-heading a.collapsed:hover {
+  background: var(--blue-gradient);
+  color: var(--secondary-color);
+}
+
+/* Icons with hover effect */
+.sc_icon:hover {
+  background: var(--blue-gradient);
+  color: var(--secondary-color);
+  border-color: var(--blue-medium);
+}
+
+/* Secondary color (white) implementation */
+.sc_section_style_2,
+.sc_section_style_3 {
+  background-color: var(--secondary-color);
+}
+
+/* Cards, panels and content boxes */
+.sc_services,
+.sc_team_item,
+.sc_price_block,
+.sc_testimonials .sc_testimonial_item,
+.panel,
+.well {
+  background-color: var(--secondary-color);
+}
+
+/* Tertiary color (light gray) implementation */
+.sc_section_style_4,
+footer,
+.topWrap .usermenu_area,
+.sc_table tr:nth-child(2n+1) > td {
+  background-color: var(--tertiary-color);
+}
+
+/* Borders and dividers */
+hr,
+.sc_line,
+.widget_area aside + aside {
+  border-color: var(--tertiary-color);
+}
+
+/* Form fields and inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select,
+.form-control {
+  background-color: var(--secondary-color);
+  border-color: var(--tertiary-color);
+}
+
+/* Footer and secondary text */
+.copyright_area,
+.post_info,
+.post_meta,
+.sc_testimonial_content {
+  color: #777777;
+  background-color: var(--tertiary-color);
+}
+
+/* Alternating rows */
+.table-striped > tbody > tr:nth-of-type(odd),
+.sc_table tr:nth-child(2n) > td {
+  background-color: var(--tertiary-color);
+}
+
+/* Hover states for secondary elements */
+.sc_services:hover,
+.sc_team_item:hover,
+.panel:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-color: var(--blue-light);
+}
+
+/* Rounded edges for service containers */
+#box_wrapper > section:nth-child(4) > div > div.row.text-center .sc_services {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  padding-bottom: 50px;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#box_wrapper > section:nth-child(4) > div > div.row.text-center .sc_services:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(26, 75, 140, 0.25);
+}
+
+/* Make the buttons inside the service containers rounded as well */
+#box_wrapper > section:nth-child(4) > div > div.row.text-center .sc_services .btn {
+  border-radius: 30px;
+  padding: 8px 20px;
+  margin: 15px auto 0;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  display: inline-block;
+}
+
+/* Ensure description has enough room for the button */
+#box_wrapper > section:nth-child(4) > div > div.row.text-center .sc_services .sc_description {
+  margin-bottom: 30px;
+}
+
+/* Fix service layout to accommodate button */
+#box_wrapper > section:nth-child(4) > div > div.row.text-center .col-md-4,
+#box_wrapper > section:nth-child(4) > div > div.row.text-center .col-sm-6 {
+  margin-bottom: 30px;
+}
+
+/* Enhanced blue hover effect for service containers */
+#box_wrapper > section:nth-child(4) > div > div.row.text-center .sc_services {
+  position: relative;
+  z-index: 1;
+}
+
+#box_wrapper > section:nth-child(4) > div > div.row.text-center .sc_services::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--blue-gradient);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+  border-radius: 15px;
+}
+
+#box_wrapper > section:nth-child(4) > div > div.row.text-center .sc_services:hover::before {
+  opacity: 0.95;
+}
+
+#box_wrapper > section:nth-child(4) > div > div.row.text-center .sc_services:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(26, 75, 140, 0.25);
+}
+
+#box_wrapper > section:nth-child(4) > div > div.row.text-center .sc_services:hover h5.sc_title,
+#box_wrapper > section:nth-child(4) > div > div.row.text-center .sc_services:hover .sc_description,
+#box_wrapper > section:nth-child(4) > div > div.row.text-center .sc_services:hover .sc_icon:before {
+  color: var(--secondary-color);
+  transition: color 0.3s ease;
+}
+
+#box_wrapper > section:nth-child(4) > div > div.row.text-center .sc_services:hover .sc_icon {
+  background-color: transparent;
+  border-color: var(--secondary-color);
+  transition: all 0.3s ease;
+}
+
+#box_wrapper > section:nth-child(4) > div > div.row.text-center .sc_services:hover .btn {
+  background: var(--secondary-color);
+  color: var(--blue-dark);
+  border-color: var(--secondary-color);
+  transition: all 0.3s ease;
+}
+
+/* Ensure smooth transitions for all elements */
+#box_wrapper > section:nth-child(4) > div > div.row.text-center .sc_services h5.sc_title,
+#box_wrapper > section:nth-child(4) > div > div.row.text-center .sc_services .sc_description,
+#box_wrapper > section:nth-child(4) > div > div.row.text-center .sc_services .sc_icon,
+#box_wrapper > section:nth-child(4) > div > div.row.text-center .sc_services .sc_icon:before,
+#box_wrapper > section:nth-child(4) > div > div.row.text-center .sc_services .btn {
+  transition: all 0.3s ease;
+}
+
+/* Apply blue gradient to other interactive elements throughout the site */
+.sc_accordion .sc_accordion_title:hover,
+.sc_toggles .sc_toggles_title:hover,
+.sc_tabs .sc_tabs_titles li a:hover,
+.sc_tabs .sc_tabs_titles li.ui-state-active a {
+  background: var(--blue-gradient);
+  color: var(--secondary-color);
+}
+
+/* Testimonial controls */
+.sc_testimonials .flex-direction-nav a:hover,
+.sc_testimonials .flex-control-paging li a.flex-active,
+.sc_testimonials .flex-control-paging li a:hover {
+  background: var(--blue-gradient);
+}
+
+/* Pricing tables */
+.sc_price_block .sc_price_block_link .sc_button {
+  background: var(--blue-gradient);
+}
+
+.sc_price_block .sc_price_block_link .sc_button:hover {
+  background: var(--blue-gradient-hover);
+  box-shadow: 0 5px 15px rgba(26, 75, 140, 0.25);
+}
+
+.sc_price_block.featured .sc_price_block_title {
+  background: var(--blue-gradient);
+}
+
+/* Team members hover */
+.sc_team_item .sc_team_item_info:hover {
+  border-color: var(--blue-medium);
+}
+
+/* Global hover effects for clickable elements */
+.clickable-item:hover,
+.widget_area .widget_calendar .today a,
+.widget_area .widget_calendar td a:hover {
+  background: var(--blue-gradient);
+  color: var(--secondary-color);
+}
+
+/* Slider controls */
+.flex-direction-nav a:hover,
+.flex-control-paging li a.flex-active,
+.flex-control-paging li a:hover,
+.swiper-pagination-bullet-active,
+.swiper-pagination-bullet:hover {
+  background: var(--blue-gradient) !important;
+}
+
+/* Shadcn-inspired Testimonials Section */
+.shadcn-testimonials {
+  background: var(--blue-gradient-vertical);
+  padding: 50px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.shadcn-testimonials::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('data:image/svg+xml;utf8,<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L29 29" stroke="rgba(255,255,255,0.05)" stroke-linecap="round"/></svg>');
+  background-size: 40px 40px;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.shadcn-testimonials .container {
+  position: relative;
+  z-index: 2;
+}
+
+.shadcn-title {
+  color: var(--secondary-color);
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.shadcn-title::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: var(--secondary-color);
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.shadcn-carousel {
+  position: relative;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.shadcn-card-wrapper {
+  position: relative;
+  min-height: 240px;
+}
+
+.shadcn-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(40px);
+  transition: all 0.4s ease;
+  pointer-events: none;
+}
+
+.shadcn-card.active {
+  opacity: 1;
+  transform: translateX(0);
+  z-index: 10;
+  pointer-events: auto;
+}
+
+.shadcn-card-content {
+  position: relative;
+}
+
+.shadcn-quote-icon {
+  color: var(--blue-medium);
+  margin-bottom: 15px;
+  opacity: 0.6;
+}
+
+.shadcn-quote-icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.shadcn-text {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.shadcn-author {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+.shadcn-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 12px;
+  border: 2px solid var(--blue-medium);
+}
+
+.shadcn-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.shadcn-author-name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--blue-dark);
+}
+
+.shadcn-author-detail {
+  margin: 3px 0 0;
+  font-size: 12px;
+  color: #666;
+}
+
+.shadcn-carousel-controls {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.shadcn-carousel-indicators {
+  display: flex;
+  gap: 8px;
+}
+
+.shadcn-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.shadcn-indicator.active {
+  background: var(--secondary-color);
+  transform: scale(1.2);
+}
+
+.shadcn-carousel-arrows {
+  display: flex;
+  gap: 15px;
+}
+
+.shadcn-arrow {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.shadcn-arrow:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .shadcn-testimonials {
+    padding: 40px 0;
+  }
+  
+  .shadcn-card {
+    padding: 25px;
+  }
+  
+  .shadcn-text {
+    font-size: 14px;
+  }
+  
+  .shadcn-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .shadcn-testimonials {
+    padding: 30px 0;
+  }
+  
+  .shadcn-card {
+    padding: 20px 15px;
+  }
+  
+  .shadcn-text {
+    font-size: 13px;
+  }
+  
+  .shadcn-title {
+    font-size: 22px;
+  }
+  
+  .shadcn-quote-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+}
