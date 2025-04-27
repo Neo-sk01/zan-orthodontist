@@ -531,44 +531,125 @@
             </div>
         </section>
 
-        <section id="contact_form_section" class="sc_parallax_gradient sc_parallax" data-parallax-speed="0.3" data-parallax-x-pos="50%" data-parallax-y-pos="50%">
-            <div class="sc_parallax_content">
-                <div class="sc_parallax_overlay">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12 text-center">
-                                <h3 class="sc_title">Contact us for free consultation</h3>
+        <section id="contact_form_section" class="shadcn-contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <h3 class="shadcn-title">Contact us for free consultation</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="shadcn-form-card">
+                            <div class="shadcn-form-header">
+                                <div class="shadcn-form-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                                        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                                    </svg>
+                                </div>
+                                <p class="shadcn-form-text">We'll get back to you within 24 hours</p>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-10 col-sm-offset-1">
-                                <form id="contactForm" class="shake" action="include/contact-form.php" method="post">
-                                    <div class="row">
-                                        <div class="form-group col-sm-6">
-                                            <input type="text" class="form-control" id="name" placeholder="Name" required>
+                            
+                            <form id="contactForm" class="shadcn-form" action="include/contact-form.php" method="post">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="shadcn-form-group">
+                                            <label class="shadcn-label" for="name">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                                    <circle cx="12" cy="7" r="4"></circle>
+                                                </svg>
+                                                Name
+                                            </label>
+                                            <input type="text" class="shadcn-input" id="name" placeholder="Your name" required>
                                         </div>
-                                        <div class="form-group col-sm-6">
-                                            <input type="text" class="form-control" id="last_name" placeholder="Last name" required>
-                                        </div>
-                                        <div class="form-group col-sm-6">
-                                            <input type="email" class="form-control" id="email" placeholder="E-mail" required>
-                                        </div>
-                                        <div class="form-group col-sm-6">
-                                            <input type="text" class="form-control" id="phone" placeholder="Phone" required>
-                                        </div>
-                                        <div class="form-group col-sm-6">
-                                            <textarea id="message" class="form-control" rows="6" placeholder="Enter your message" required></textarea>
-                                        </div>
-                                        <div class="form-group col-sm-6">
-                                            <input type="text" class="form-control" id="service" placeholder="I'm interested in service" required>
-                                        </div>
-                                        <div class="form-group col-sm-6">
-                                            <button type="submit" id="form-submit" class="btn btn-default btn-lg pull-right ">Submit</button>
-                                        </div>
-                                        <div class="trx_addons_message_box sc_form_result"></div>
                                     </div>
-                                </form>
-                            </div>
+                                    <div class="col-md-6">
+                                        <div class="shadcn-form-group">
+                                            <label class="shadcn-label" for="last_name">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                                    <circle cx="12" cy="7" r="4"></circle>
+                                                </svg>
+                                                Last name
+                                            </label>
+                                            <input type="text" class="shadcn-input" id="last_name" placeholder="Last name" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="shadcn-form-group">
+                                            <label class="shadcn-label" for="email">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                                </svg>
+                                                Email
+                                            </label>
+                                            <input type="email" class="shadcn-input" id="email" placeholder="Email address" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="shadcn-form-group">
+                                            <label class="shadcn-label" for="phone">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                                </svg>
+                                                Phone
+                                            </label>
+                                            <input type="text" class="shadcn-input" id="phone" placeholder="Phone number" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="shadcn-form-group">
+                                            <label class="shadcn-label" for="service">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                                </svg>
+                                                Service
+                                            </label>
+                                            <select class="shadcn-input" id="service" required>
+                                                <option value="" disabled selected>Select service</option>
+                                                <option value="Dental Implants">Dental Implants</option>
+                                                <option value="Braces">Braces</option>
+                                                <option value="Teeth Whitening">Teeth Whitening</option>
+                                                <option value="Crowns and Bridges">Crowns and Bridges</option>
+                                                <option value="Prevention">Prevention</option>
+                                                <option value="Cosmetic Dentistry">Cosmetic Dentistry</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="shadcn-form-group">
+                                            <label class="shadcn-label" for="message">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                                </svg>
+                                                Message
+                                            </label>
+                                            <textarea id="message" class="shadcn-textarea" rows="4" placeholder="Your message" required></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="shadcn-form-footer">
+                                    <button type="submit" id="form-submit" class="shadcn-button">
+                                        <span class="shadcn-button-text">Submit</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                            <polyline points="12 5 19 12 12 19"></polyline>
+                                        </svg>
+                                    </button>
+                                </div>
+                                
+                                <div class="trx_addons_message_box sc_form_result"></div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -586,30 +667,75 @@
             </div>
         </section>
 
-        <footer>
-            <div class="copyright_area">
-                <div class="container">
-                    <div class="row copy">
-                        <div class="col-sm-9 col-xs-12 copyright">
-                            <div class="col-sm-9 copyright"><a target="_blank" href="https://themeforest.net/user/ancorathemes/portfolio ">AncoraThemes </a> &copy; <span id="date"></span> All Rights Reserved <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></div>
-                            <div class="col-sm-3 col-xs-12 footer_social text-right">
-                                <div class="sc_socials">
-                                    <div class="sc_socials_item">
-                                        <a href="#" target="_blank" class="sc_icon icon-facebook-circled"></a>
-                                    </div>
-                                    <div class="sc_socials_item">
-                                        <a href="#" target="_blank" class="sc_icon icon-skype-outline"></a>
-                                    </div>
-                                    <div class="sc_socials_item">
-                                        <a href="#" target="_blank" class="sc_icon icon-twitter-circled"></a>
-                                    </div>
-                                    <div class="sc_socials_item">
-                                        <a href="#" target="_blank" class="sc_icon icon-linkedin-circled"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <!-- Map -->
+        <div class="row-fluid grey-row">
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span12">
+                        <div id="map"></div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- New shadcn-styled Footer -->
+        <footer class="shadcn-footer">
+            <div class="container">
+                <!-- Logo in Footer -->
+                <div class="shadcn-footer-logo">
+                    <img src="img/orthodontist-logo.png" alt="Zan Orthodontist Logo" width="150">
+                </div>
+                
+                <!-- Footer Links -->
+                <div class="shadcn-footer-links">
+                    <a href="#" class="shadcn-footer-link">Home</a>
+                    <a href="#" class="shadcn-footer-link">About Us</a>
+                    <a href="#" class="shadcn-footer-link">Services</a>
+                    <a href="#" class="shadcn-footer-link">Patient Info</a>
+                    <a href="#" class="shadcn-footer-link">Our Practice</a>
+                    <a href="#" class="shadcn-footer-link">Reviews</a>
+                    <a href="#" class="shadcn-footer-link">Contact</a>
+                    <a href="#" class="shadcn-footer-link">Privacy Policy</a>
+                    <a href="#" class="shadcn-footer-link">Terms of Service</a>
+                </div>
+                
+                <!-- Social Media Icons -->
+                <div class="shadcn-footer-socials">
+                    <a href="#" class="shadcn-footer-social" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="shadcn-footer-social" aria-label="Twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="shadcn-footer-social" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <a href="#" class="shadcn-footer-social" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="#" class="shadcn-footer-social" aria-label="YouTube">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                        </svg>
+                    </a>
+                </div>
+                
+                <!-- Copyright Information -->
+                <div class="shadcn-footer-copyright">
+                    &copy; 2023 Zan Orthodontist. All rights reserved.
                 </div>
             </div>
         </footer>
