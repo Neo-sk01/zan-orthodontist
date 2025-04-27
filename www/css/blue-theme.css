@@ -775,7 +775,7 @@ select,
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 16px;
+  padding: 15px 16px;
   background: rgba(255, 255, 255, 0.85);
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
@@ -786,8 +786,8 @@ select,
   justify-content: center;
   background: var(--blue-gradient);
   color: white;
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   margin-right: 10px;
 }
@@ -799,80 +799,120 @@ select,
 
 .shadcn-form-text {
   margin: 0;
-  font-size: 13px;
+  font-size: 14px;
   color: var(--blue-dark);
   font-weight: 500;
 }
 
 .shadcn-form {
-  padding: 15px 20px;
+  padding: 25px 20px 20px;
 }
 
-.shadcn-form-group {
-  margin-bottom: 9px;
+/* New floating label styles */
+.shadcn-form-floating {
+  position: relative;
+  margin-bottom: 20px;
 }
 
-.shadcn-label {
+.shadcn-floating-label {
+  position: absolute;
+  top: 8px;
+  left: 10px;
   display: flex;
   align-items: center;
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--blue-dark);
-  margin-bottom: 4px;
+  font-size: 14px;
+  color: #666;
+  pointer-events: none;
+  transition: transform 0.25s ease, color 0.25s ease, font-size 0.25s ease;
 }
 
-.shadcn-label svg {
-  margin-right: 4px;
+.shadcn-floating-label svg {
+  margin-right: 6px;
   color: var(--blue-medium);
   width: 14px;
   height: 14px;
 }
 
 .shadcn-input,
-.shadcn-textarea {
+.shadcn-textarea,
+.shadcn-select {
   width: 100%;
-  padding: 6px 10px;
+  padding: 10px 12px;
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 5px;
-  font-size: 13px;
+  font-size: 14px;
   background: white;
   transition: all 0.2s ease;
-  height: 30px;
+  height: 44px;
 }
 
 .shadcn-input:focus,
-.shadcn-textarea:focus {
+.shadcn-textarea:focus,
+.shadcn-select:focus {
   outline: none;
   border-color: var(--blue-medium);
   box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
 }
 
+/* Floating label animation */
+.shadcn-input:focus ~ .shadcn-floating-label,
+.shadcn-textarea:focus ~ .shadcn-floating-label,
+.shadcn-select:focus ~ .shadcn-floating-label,
+.shadcn-input:not(:placeholder-shown) ~ .shadcn-floating-label,
+.shadcn-textarea:not(:placeholder-shown) ~ .shadcn-floating-label,
+.shadcn-select:focus ~ .shadcn-floating-label,
+.shadcn-select:not([value=""]):valid ~ .shadcn-floating-label {
+  transform: translateY(-19px) translateX(-5px) scale(0.85);
+  padding: 0 5px;
+  background-color: white;
+  color: var(--blue-medium);
+}
+
 .shadcn-textarea {
   resize: vertical;
-  min-height: 65px;
+  min-height: 100px;
   height: auto;
+}
+
+.shadcn-form-checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.shadcn-form-checkbox input[type="checkbox"] {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+  accent-color: var(--blue-medium);
+}
+
+.shadcn-form-checkbox label {
+  font-size: 13px;
+  color: #666;
 }
 
 .shadcn-form-footer {
   display: flex;
-  justify-content: flex-end;
-  margin-top: 12px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
 }
 
 .shadcn-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 6px 16px;
+  padding: 10px 20px;
   background: var(--blue-gradient);
   color: white;
   border: none;
   border-radius: 5px;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease;
-  height: 30px;
+  height: 44px;
 }
 
 .shadcn-button:hover {
@@ -881,17 +921,17 @@ select,
 }
 
 .shadcn-button-text {
-  margin-right: 6px;
+  margin-right: 8px;
 }
 
 .shadcn-button svg {
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   transition: transform 0.2s ease;
 }
 
 .shadcn-button:hover svg {
-  transform: translateX(2px);
+  transform: translateX(4px);
 }
 
 /* Media queries for contact form responsiveness */
@@ -922,24 +962,36 @@ select,
   }
   
   .shadcn-form {
-    padding: 12px;
+    padding: 15px;
   }
   
-  .shadcn-form-group {
-    margin-bottom: 8px;
+  .shadcn-form-floating {
+    margin-bottom: 15px;
   }
   
   .shadcn-form-header {
-    padding: 8px;
+    padding: 12px;
   }
   
   .shadcn-form-icon {
-    width: 24px;
-    height: 24px;
+    width: 26px;
+    height: 26px;
   }
   
   .shadcn-form-text {
-    font-size: 12px;
+    font-size: 13px;
+  }
+  
+  .shadcn-form-footer {
+    flex-direction: column;
+  }
+  
+  .shadcn-form-checkbox {
+    margin-bottom: 15px;
+  }
+  
+  .shadcn-button {
+    width: 100%;
   }
 }
 
@@ -949,12 +1001,266 @@ select,
   }
   
   .shadcn-form {
-    padding: 10px;
+    padding: 12px 10px;
   }
   
   .shadcn-button {
     width: 100%;
-    padding: 8px;
+  }
+}
+
+/* Map Section Styling */
+.shadcn-map-section {
+  padding: 70px 0;
+  background-color: #f9f9f9;
+  position: relative;
+  overflow: hidden;
+}
+
+.shadcn-map-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.shadcn-map-section .shadcn-title {
+  color: var(--blue-dark);
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+}
+
+.shadcn-map-section .shadcn-title::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: var(--blue-gradient);
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.shadcn-map-container {
+  position: relative;
+  height: 420px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  transform: translateY(0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shadcn-map-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(26, 75, 140, 0.15);
+}
+
+.shadcn-map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.shadcn-location-card {
+  height: 420px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shadcn-location-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(26, 75, 140, 0.15);
+}
+
+.shadcn-location-header {
+  padding: 20px;
+  background: var(--blue-gradient);
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.shadcn-location-pin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.15);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.shadcn-location-pin svg {
+  width: 22px;
+  height: 22px;
+}
+
+.shadcn-location-header h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.shadcn-location-body {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.shadcn-location-info {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.shadcn-info-item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.shadcn-info-icon {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  color: var(--blue-medium);
+  flex-shrink: 0;
+}
+
+.shadcn-info-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.shadcn-info-item h5 {
+  margin: 0 0 5px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--blue-dark);
+}
+
+.shadcn-info-item p {
+  margin: 0 0 3px;
+  font-size: 14px;
+  color: #666;
+}
+
+.shadcn-info-item a {
+  color: var(--blue-medium);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.shadcn-info-item a:hover {
+  color: var(--blue-dark);
+}
+
+.shadcn-directions-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  background: var(--blue-gradient);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.shadcn-directions-button span {
+  margin-right: 8px;
+}
+
+.shadcn-directions-button svg {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.2s ease;
+}
+
+.shadcn-directions-button:hover {
+  box-shadow: 0 4px 12px rgba(26, 75, 140, 0.25);
+  color: white;
+}
+
+.shadcn-directions-button:hover svg {
+  transform: translateX(4px);
+}
+
+@media (max-width: 991px) {
+  .shadcn-map-section {
+    padding: 50px 0;
+  }
+  
+  .shadcn-map-section .shadcn-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  .shadcn-location-card {
+    margin-top: 30px;
+    height: auto;
+  }
+  
+  .shadcn-map-container {
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .shadcn-map-section {
+    padding: 40px 0;
+  }
+  
+  .shadcn-map-section .shadcn-title {
+    font-size: 24px;
+  }
+  
+  .shadcn-map-container {
+    height: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .shadcn-map-section {
+    padding: 30px 0;
+  }
+  
+  .shadcn-map-section .shadcn-title {
+    font-size: 22px;
+  }
+  
+  .shadcn-map-container {
+    height: 250px;
+    border-radius: 8px;
+  }
+  
+  .shadcn-location-card {
+    border-radius: 8px;
+  }
+  
+  .shadcn-location-header {
+    padding: 15px;
+  }
+  
+  .shadcn-location-body {
+    padding: 15px;
   }
 }
 

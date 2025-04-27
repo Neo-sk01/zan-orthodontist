@@ -544,8 +544,7 @@
                             <div class="shadcn-form-header">
                                 <div class="shadcn-form-icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
-                                        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                                     </svg>
                                 </div>
                                 <p class="shadcn-form-text">We'll get back to you within 24 hours</p>
@@ -554,68 +553,62 @@
                             <form id="contactForm" class="shadcn-form" action="include/contact-form.php" method="post">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <div class="shadcn-form-group">
-                                            <label class="shadcn-label" for="name">
+                                        <div class="shadcn-form-floating">
+                                            <input type="text" class="shadcn-input" id="name" placeholder=" " required>
+                                            <label class="shadcn-floating-label" for="name">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                                     <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                                                     <circle cx="12" cy="7" r="4"></circle>
                                                 </svg>
-                                                Name
+                                                First Name
                                             </label>
-                                            <input type="text" class="shadcn-input" id="name" placeholder="Your name" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="shadcn-form-group">
-                                            <label class="shadcn-label" for="last_name">
+                                        <div class="shadcn-form-floating">
+                                            <input type="text" class="shadcn-input" id="last_name" placeholder=" " required>
+                                            <label class="shadcn-floating-label" for="last_name">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                                     <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                                                     <circle cx="12" cy="7" r="4"></circle>
                                                 </svg>
-                                                Last name
+                                                Last Name
                                             </label>
-                                            <input type="text" class="shadcn-input" id="last_name" placeholder="Last name" required>
                                         </div>
                                     </div>
                                 </div>
                                 
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <div class="shadcn-form-group">
-                                            <label class="shadcn-label" for="email">
+                                        <div class="shadcn-form-floating">
+                                            <input type="email" class="shadcn-input" id="email" placeholder=" " required>
+                                            <label class="shadcn-floating-label" for="email">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                                                     <polyline points="22,6 12,13 2,6"></polyline>
                                                 </svg>
-                                                Email
+                                                Email Address
                                             </label>
-                                            <input type="email" class="shadcn-input" id="email" placeholder="Email address" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="shadcn-form-group">
-                                            <label class="shadcn-label" for="phone">
+                                        <div class="shadcn-form-floating">
+                                            <input type="tel" class="shadcn-input" id="phone" placeholder=" " required>
+                                            <label class="shadcn-floating-label" for="phone">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                                                 </svg>
-                                                Phone
+                                                Phone Number
                                             </label>
-                                            <input type="text" class="shadcn-input" id="phone" placeholder="Phone number" required>
                                         </div>
                                     </div>
                                 </div>
                                 
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <div class="shadcn-form-group">
-                                            <label class="shadcn-label" for="service">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                                                </svg>
-                                                Service
-                                            </label>
-                                            <select class="shadcn-input" id="service" required>
-                                                <option value="" disabled selected>Select service</option>
+                                        <div class="shadcn-form-floating">
+                                            <select class="shadcn-input shadcn-select" id="service" required>
+                                                <option value="" disabled selected></option>
                                                 <option value="Dental Implants">Dental Implants</option>
                                                 <option value="Braces">Braces</option>
                                                 <option value="Teeth Whitening">Teeth Whitening</option>
@@ -623,27 +616,39 @@
                                                 <option value="Prevention">Prevention</option>
                                                 <option value="Cosmetic Dentistry">Cosmetic Dentistry</option>
                                             </select>
+                                            <label class="shadcn-floating-label" for="service">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                                </svg>
+                                                Select Service
+                                            </label>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="shadcn-form-group">
-                                            <label class="shadcn-label" for="message">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                                                </svg>
-                                                Message
-                                            </label>
-                                            <textarea id="message" class="shadcn-textarea" rows="4" placeholder="Your message" required></textarea>
+                                            <div class="shadcn-form-floating">
+                                                <textarea id="message" class="shadcn-textarea" rows="4" placeholder=" " required></textarea>
+                                                <label class="shadcn-floating-label" for="message">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                                    </svg>
+                                                    Your Message
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 
                                 <div class="shadcn-form-footer">
+                                    <div class="shadcn-form-checkbox">
+                                        <input type="checkbox" id="consent" required>
+                                        <label for="consent">I agree to the privacy policy</label>
+                                    </div>
                                     <button type="submit" id="form-submit" class="shadcn-button">
-                                        <span class="shadcn-button-text">Submit</span>
+                                        <span class="shadcn-button-text">Send Request</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                                            <polyline points="12 5 19 12 12 19"></polyline>
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5l7 7-7 7"></path>
                                         </svg>
                                     </button>
                                 </div>
@@ -656,12 +661,93 @@
             </div>
         </section>
 
-        <section id="map_section" class="">
-            <div class="row text-center">
-                <div class="col-sm-12">
-                    <div id="map" class="itited">
-                        <iframe frameborder="0" style="border: 0px; width: 100%; height: 500px;" src="https://maps.google.com/maps?t=m&output=embed&iwloc=near&z=12&q=56-34+Waldron+St+Flushing%2C+NY+11368%2C+USA" aria-label="San Francisco, CA 94102, US">
-                        </iframe>
+        <section id="map_section" class="shadcn-map-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <h3 class="shadcn-title">Our Location</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div id="map" class="shadcn-map-container">
+                            <iframe frameborder="0" src="https://maps.google.com/maps?t=m&output=embed&iwloc=near&z=12&q=56-34+Waldron+St+Flushing%2C+NY+11368%2C+USA" aria-label="San Francisco, CA 94102, US">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="shadcn-location-card">
+                            <div class="shadcn-location-header">
+                                <div class="shadcn-location-pin">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <h4>Visit Our Office</h4>
+                            </div>
+                            <div class="shadcn-location-body">
+                                <div class="shadcn-location-info">
+                                    <div class="shadcn-info-item">
+                                        <div class="shadcn-info-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h5>Phone</h5>
+                                            <p><a href="tel:+08001234567">(800) 123-4567</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="shadcn-info-item">
+                                        <div class="shadcn-info-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                                <polyline points="22,6 12,13 2,6"></polyline>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h5>Email</h5>
+                                            <p><a href="mailto:info@zanorthodontist.com">info@zanorthodontist.com</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="shadcn-info-item">
+                                        <div class="shadcn-info-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h5>Office Hours</h5>
+                                            <p>Monday-Friday: 8am-6pm</p>
+                                            <p>Saturday: 9am-2pm</p>
+                                            <p>Sunday: Closed</p>
+                                        </div>
+                                    </div>
+                                    <div class="shadcn-info-item">
+                                        <div class="shadcn-info-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h5>Address</h5>
+                                            <p>56-34 Waldron St</p>
+                                            <p>Flushing, NY 11368, USA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="https://maps.google.com/maps?q=56-34+Waldron+St+Flushing%2C+NY+11368%2C+USA" target="_blank" class="shadcn-directions-button">
+                                    <span>Get Directions</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -823,6 +909,18 @@
                 }
                 showCard(newIndex);
             }, 6000);
+            
+            // Handle select element with floating labels
+            const selectElement = document.querySelector('.shadcn-select');
+            if (selectElement) {
+                selectElement.addEventListener('change', function() {
+                    if (this.value) {
+                        this.setAttribute('selected', true);
+                    } else {
+                        this.removeAttribute('selected');
+                    }
+                });
+            }
         });
     </script>
 </body>
